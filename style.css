@@ -1,0 +1,43 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+nav{
+background-color: white;
+margin: 20px;
+}
+li{
+    display: inline-block;
+    color: black;
+    margin-top: 2px;
+}
+ul{
+    text-align: center;
+    display:flex;
+    padding-left: 500px;
+}
+.HOME, .SOBRE, .CONTATO{
+    text-decoration: none;
+    color: black;
+    margin-top: 50px;
+}
+.HOME{
+    border: 2px white;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: lightgray;
+}
+.img1{
+    height: 350px;
+    float: right;
+}
+main{
+    background-color: antiquewhite;
+}
+header{
+    font-size: 70px;
+    float: left;
+}
+head{
+    background-color: antiquewhite;  
+}
