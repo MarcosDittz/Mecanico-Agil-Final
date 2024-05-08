@@ -4,7 +4,8 @@
 }
 nav{
 background-color: white;
-margin: 20px;
+margin: 0px;
+padding: 30px;
 }
 li{
     display: inline-block;
@@ -15,6 +16,7 @@ ul{
     text-align: center;
     display:flex;
     padding-left: 500px;
+    font-size: 40px;
 }
 .HOME, .SOBRE, .CONTATO{
     text-decoration: none;
@@ -23,21 +25,65 @@ ul{
 }
 .HOME{
     border: 2px white;
-    border-radius: 2px;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
     background-color: lightgray;
 }
-.img1{
-    height: 350px;
-    float: right;
+.HOME:hover{
+    color: blue;
 }
-main{
-    background-color: antiquewhite;
+.SOBRE:hover{
+    color: blue;
+}
+.CONTATO:hover{
+    color: blue;
+}
+.img1{
+    height: 800px;
+    float: right;
+    width: 50%;
 }
 header{
-    font-size: 70px;
+    font-size: 130px;
     float: left;
+    width: 47%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-left: 70px;
 }
-head{
-    background-color: antiquewhite;  
+body{
+    background-color: rgb(251, 247, 239);
+}
+main{
+    padding-top: 130px;
+}
+h1>p{
+    width: 50%;
+    float: left;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    padding: 75px;
+}
+h2>a{
+   float: left;
+   padding: 25px;
+   text-decoration: none;
+   font-size: 40px;
+   color: black;
+   font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-left: 80px;
+}
+.linkone{
+    border: 2px white;
+    border-radius: 5px;
+    background-color: black; 
+    color: white;   
+}
+.linktwo{
+    text-decoration: underline 2px;
 }
