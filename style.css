@@ -1,147 +1,201 @@
-*{
-    margin: auto;
-    box-sizing: border-box;
+/*Cabeçalho*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /*Cor de fundo*/
+    padding: 30px;
+    
 }
-nav{
-background-color:  rgb(251, 247, 239);
-margin: 0px;
-padding: 30px;
+
+/*Logo*/
+.logo img {
+    height: 150px; /* altura */
 }
-li{
-    display: inline-block;
-    color: black;
-    margin-top: 2px;
+
+/* menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-ul{
-    text-align: center;
-    display:flex;
-    padding-left: 500px;
+
+nav ul li {
+    display: inline;
+    margin-right: 90px; /* espaço dos botões do menu */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; /* fonte em negrito */
     font-size: 20px;
 }
-.HOME, .SOBRE, .CONTATO{
-    text-decoration: none;
-    color: black;
-    margin-top: 50px;
+
+nav ul li a:hover {
+    color: #ccc; /* altera a cor do texto ao passar o mouse*/
 }
-.HOME{
-    border: 2px white;
+
+.banner1 {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h1 {
+    font-size: 52px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+.text h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.text1 {
+    flex: 1;
+}
+
+.text1 h1 {
+    font-size: 52px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: antiquewhite;
+}
+.text1 h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;
+}
+/* Estilos para a imagem */
+.image1 {
+    flex: 1;
+}
+
+.image1 img {
+    max-width: 100%;
+    height: auto;
+}
+/*Seção 2*/
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Estilos para o texto */
+.section .text {
+    flex: 1;
+}
+
+/*Imagem 2 */
+.section .image2 {
+    flex: 1;
+    order: -1; /* Imagem à esquerda */
+}
+
+.image2 img {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.botao {
+    background-color: #000; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
     border-radius: 5px;
-    padding: 20px;
-    background-color: lightgray;
+    font-size: 16px; 
+    cursor: pointer; 
 }
-.HOME:hover{
-    color: blue;
-    background-color: black;
+
+.botao:hover {
+    background-color: #524f4f; 
 }
-.SOBRE:hover{
-    color: blue;
-    background-color: black;
-}
-.CONTATO:hover{
-    color: blue;
-    background-color: black;
-}
-.img1{
-    height: 350px;
-    float: right;
-    width: 49%;
-    margin-top: 25px;
-}
-header{
-    font-size: 60px;
-    float: left;
-    width: 45%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    margin-left: 70px;
-}
-body{
-    background-color: rgb(251, 247, 239);
-    margin: auto;
-    padding: auto;
-}
-main{
-    padding-top: 20px;
-}
-h1>p{
-    width: 47%;
-    float: left;
-    font-size: 35px;
-    color: rgb(0, 0, 0);
-    font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 350;
-    padding: 20px;
-    margin-left: 50px;
-    justify-content: left;
-}
-h2>a{
-   float: left;
-   padding: 15px;
-   text-decoration: none;
-   font-size: 20px;
-   color: black;
-   font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    margin-left: 70px;
-}
-.linkone{
-    border: 2px white;
+
+.botao1 {
+    background-color:#fff; 
+    color: #000; 
+    padding: 10px 20px; 
+    border: none; 
     border-radius: 5px;
-    background-color: black; 
-    color: white;   
+    font-size: 16px; 
+    cursor: pointer; 
 }
-.linktwo{
-    text-decoration: underline 2px;
+
+.botao1:hover {
+    background-color: #524f4f; 
 }
-.secaoone{
-    width: 100%;
-    float: left;
-    margin: 0px 400px 0px 0px;
+.link {
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.map{
-    height: 250px;
-    margin-left: 180px;
-    margin-top: 20px;
-}
-.descimg{
-font-size: 30px;
-color: black;
-   font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    margin-left: 140px;
-    margin-top: 10px;
-}
-.descimgb{
-    font-size: 23px;
-    color: black;
-       font-style: normal;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 350;
-        margin-left: 190px;
-        width: 25%;
-        text-align: center;
-        margin-top: 15px;
+
+.link:hover {
+    color: #524f4f;
+    text-decoration: underline;
+    transition: color 0.3s ease;
     }
-.descimgc{
-        font-size: 20px;
-        color: black;
-           font-style: normal;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 320;
-            margin-left: 297px;
+
+.link1 {
+        color: #fff; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .link1:hover {
+        color: #524f4f;
+        text-decoration: underline;
+        transition: color 0.3s ease;
         }
-.smarthand{
-    float: right;
-    margin-top: 80px;
-    margin-right: 80px;
-    height: 500px;
+    
+.image3 {
+    flex: 1;
 }
-.socialmedia{
-    float: left;
-    margin-top: 20px;
-    margin-left: 190px;
-    height: 45px;
+
+.image3 img {
+    max-width: 100%;
+    height: auto;
 }
+.banner2 {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+/* Estilos para o texto */
+.banner2 .text {
+    flex: 1;
+}
+
+.img-lojas {
+    flex: 1;
+}
+
+.img-lojas img {
+    max-width: 50%;
+    height: auto;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 150px;
+}
+
+
