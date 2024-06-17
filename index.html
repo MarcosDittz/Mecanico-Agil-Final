@@ -13,52 +13,91 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#sobre">SOBRE O APP</a></li>
-            <li><a href="#contato">CONTATO</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#sobre">Sobre o APP</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#empresas">Para Empresas</a></li>
+
         </ul>
     </nav>
 </header>
+<body>
 <main>
     <section class="banner1">
         <div class="text1">
-            <h1>O melhor app para encontrar oficina mecânica!</h1>
-            <h2>Encontre a oficina perfeita com poucos cliques</h2>
+            <h1>O melhor app para encontrar oficinas mecânicas finalmente chegou!</h1>
+            <p>Solicite os serviços com poucos cliques</p>
             <div class="buttons">
-                <button class="botao">Começar a usar</button>
-                <a href="#" class="link">Termos e condições</a>
+                <button  onclick="inicio()" class="botao">Começar a usar</button>
+                <a href="termosdeuso.html" class="link">Termos e condições</a>
             </div>
         </div>
         <div class="image1">
-            <img src="homem-carro.png" alt="Banner Image">
+            <img src="homem-carro copy.png" alt="Banner Image">
         </div>
     </section>
     <section class="section">
         <div class="text">
-            <h1>Encontre oficinas perto de você</h2>
-            <h2>Utilize o mapa interativo para localizar oficinas com base em sua localização ou endereço</p>
+            <h1>Encontre oficinas pertinho de você</h1>
+            <p>Utilize o mapa interativo para localizar oficinas com base em sua localização ou endereço</p>
+                <div class="buttons">
+            </div>
+        </div>
+        <div class="image2">
+            <img src="localizacao.png" alt="Seção 2 Image">
+        </div>
+    </section>
+    <section class="section">
+        <div class="text">
+            <h1>Escolha estabelecimentos por avaliação</h2>
+            <p>Escolha estabelecimentos por avaliação</p>
                 <div class="buttons">
                 <button class="botao">Começar a usar</button>   
             </div>
         </div>
-        <div class="image">
-            <img src="localizacao.png" alt="Seção 2 Image">
+        <div class="image5">
+            <img src="5estrelas.png" alt="Seção 2 Image">
         </div>
     </section>
     <section class="banner1">
         <div class="text1">
             <h1>Agende serviços online</h1>
-            <h2>Entre em contato com o <br>estabelecimento pelo APP <br> e agende o serviço</h2>
+            <p>Entre em contato com o <br>estabelecimento pelo APP e agende o serviço</p>
             <div class="buttons">
                 <a href="#" class="botao">Começar a usar</a>
-                <a href="#" class="link">Termos e condições</a>
+                <a href="termosdeuso.html" class="link">Termos e condições</a>
             </div>
         </div>
         <div class="image1">
-            <img src="mecanico-celular.jpg" alt="Banner Image">
+            <img src="mecanico-celular copy.jpg" alt="Banner Image">
         </div>
     </section>
-<section class="section">
+
+        <div class="uso">
+    <main>
+    <section class="como-usar">
+        <h1>Como usar</h1>
+        <div class="steps">
+            <div class="step">
+                <img src="step-estabelecimento.jpg" alt="Passo 1">
+                <h3>Escolha o estabelecimento</h3>
+                <p>Abra o aplicativo e selecione o estabelecimento.</p>
+            </div>
+            <div class="step">
+                <img src="step-tipo-servico.jpg" alt="Passo 2">
+                <h3>Selecione o tipo de serviço</h3>
+                <p>Selecione o tipo de serviço</p>
+            </div>
+            <div class="step">
+                <img src="step-confirme-servico.png" alt="Passo 3">
+                <h3>Confirme o serviço</h3>
+                <p>Confirme o serviço</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+   <section class="section">
     <div class="text">
         <h1>Dúvidas frequentes:</h1>
         <h2>Sobre o APP</h2>
@@ -66,7 +105,7 @@
         <h2>Como usar?</h2>
         <h2>Localizar estabelecimento</h2>
         <div class="buttons">
-            <a href="#" class="link">Termos e condições</a>
+            <a href="termosdeuso.html" class="link">Termos e condições</a>
         </div>
     </div>
     <div class="image">
@@ -76,9 +115,13 @@
 
 </main>
 
-<body>
+<script>
+    function inicio(){
+        window.location.assign("https://play.google.com/store/games?device=windows&hl=pt_BR")
+    }
+</script>
     <footer>
-        <p>&copy; 2024 Mecânico Ágil </p>
+        <p>&copy; 2024 Mecânico Ágil</p>
     </footer>
  
 </body>

@@ -2,13 +2,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0f539c;
-    padding: 20px;
+    background-color: #fff;
+    padding: 10px;
 }
 
 
 .logo img {
-    height: 150px; 
+    height: 100px; 
+    align-items: flex-end;
 }
 
 /*Menu */
@@ -26,7 +27,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff; 
+    color: #0f539c; 
     font-weight: bold;
     font-size: 16px;
 }
@@ -48,7 +49,7 @@ nav ul li a:hover {
 }
 
 .text h1 {
-    font-size: 36px;
+    font-size: 50px;
 }
 
 .image {
@@ -59,14 +60,31 @@ nav ul li a:hover {
     max-width: 100%;
     height: auto;
 }
+
+
+.image2 {
+    flex: 1;
+}
+
+.image2 img {
+    max-width: 70%;
+    height: auto;
+}
+
+.section .image2 {
+    flex: 1;
+    order: -1; /* Inverte a ordem para a imagem ficar à esquerda */
+}
+
 .banner1 {
-    background-color: #000;
+    background-color: #0f539c;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
+   
 }
 
 .text1 {
@@ -74,7 +92,7 @@ nav ul li a:hover {
 }
 
 .text1 h1 {
-    font-size: 36px;
+    font-size: 50px;
 }
 
 .image1 {
@@ -161,59 +179,95 @@ nav ul li a:hover {
         transition: color 0.3s ease;
     }
 
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section */
+.uso {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.uso h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.uso p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.como-usar {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.como-usar h2 {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+}
+
+.step {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.step img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 footer {
     background-color: #001;
     color: #fff;
     text-align: center;
     padding: 150px;
-}
-.secaoone{
-    width: 100%;
-    float: left;
-    margin: 0px 400px 0px 0px;
-}
-.map{
-    height: 250px;
-    margin-left: 180px;
-    margin-top: 20px;
-}
-.descimg{
-font-size: 30px;
-color: black;
-   font-style: normal;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    margin-left: 140px;
-    margin-top: 10px;
-}
-.descimgb{
-    font-size: 23px;
-    color: black;
-       font-style: normal;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 350;
-        margin-left: 190px;
-        width: 25%;
-        text-align: center;
-        margin-top: 15px;
-    }
-.descimgc{
-        font-size: 20px;
-        color: black;
-           font-style: normal;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            font-weight: 320;
-            margin-left: 297px;
-        }
-.smarthand{
-    float: right;
-    margin-top: 80px;
-    margin-right: 80px;
-    height: 500px;
-}
-.socialmedia{
-    float: left;
-    margin-top: 20px;
-    margin-left: 190px;
-    height: 45px;
 }
